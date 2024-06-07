@@ -13,6 +13,18 @@ header {
     font-size: 35px;
 }
 
+/* Light Theme */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
 .navbar {
     border: 2px solid bisque;
     justify-content: center;
