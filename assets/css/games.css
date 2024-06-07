@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://mcdn.wallpapersafari.com/medium/50/32/x8z2RI.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.Games {
+    background-color: #ffffff67;
+    width: 98.2%;
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid rgba(0, 195, 255, 0.932);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff67;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid rgba(0, 195, 255, 0.932);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1px;
+}
+
+.nav-bar a {
+    color: black;
+}
+
+a:hover {
+    color: rgb(125, 1, 1);
+}
