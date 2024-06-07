@@ -16,6 +16,17 @@ header {
     font-size: 35px;
 }
 
+/* DARK THEME */
+
+body {
+    background-color: white;
+}
+
+/* LIGHT THEME */
+
+body.dark-theme {
+    background-color: black;
+}
 span {
     margin: 20px;
 }
