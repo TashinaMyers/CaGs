@@ -27,12 +27,15 @@ header {
 
 body {
     background-color: white;
+    color: black;
 }
 
 /* LIGHT THEME */
 
 body.dark-theme {
     background-color: black;
+    color: bisque;
+
 }
 span {
     margin: 20px;
@@ -100,8 +103,6 @@ a:hover {
 .about-page p {
     flex-wrap: wrap;
     padding: 10px;
-    color: bisque;
-
 }
 
 .img {
