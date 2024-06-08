@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root {
+    --border: rgba(0, 195, 255, 0.932);
+    --backboard: #ffffff67;
+}
+
 body {
     background-image: url(https://mcdn.wallpapersafari.com/medium/50/32/x8z2RI.jpg);
     background-repeat: no-repeat;
@@ -13,11 +18,10 @@ body {
 }
 
 .Games {
-    background-color: #ffffff67;
-    width: 98.2%;
+    background-color: var(--backboard);
     text-align: center;
     font-size: 35px;
-    border: 2px solid rgba(0, 195, 255, 0.932);
+    border: 2px solid var(--border);
     border-radius: 5px;
     padding: 10px;
     margin: 2px;
@@ -27,10 +31,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ffffff67;
+    background-color: var(--backboard);
     text-align: center;
     font-size: 25px;
-    border: 2px solid rgba(0, 195, 255, 0.932);
+    border: 2px solid var(--border);
     border-radius: 5px;
     padding: 10px;
     margin: 1px;
@@ -42,4 +46,51 @@ body {
 
 a:hover {
     color: rgb(125, 1, 1);
+}
+
+.flexy-main {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid var(--border);
+    background-color: var(--backboard);
+    width: 200px;
+}
+
+button {
+    padding: 5px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: var(--backboard);
+    color: black;
+    border: 2px solid var(--border);
+    font-size: larger;
+    text-decoration: underline var(--border);
+}
+
+button:hover {
+    transform: scale(1.06);
+    color: var(--border);
+}
+
+.txt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 28px;
+    border: 2px solid var(--border);
+    padding: 10px;
+
 }
