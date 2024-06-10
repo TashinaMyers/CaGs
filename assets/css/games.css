@@ -5,7 +5,8 @@
 
 :root {
     --border: rgba(0, 195, 255, 0.932);
-    --backboard: #ffffff3d;
+    --backboard: #0404043d;
+    --text: grey;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    color: var(--text);
 }
 
 .Games {
@@ -41,7 +43,7 @@ body {
 }
 
 .nav-bar a {
-    color: black;
+    color: var(--text);
 }
 
 a:hover {
@@ -74,7 +76,7 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
     background: var(--backboard);
-    color: black;
+    color: var(--text);
     border: 2px solid var(--border);
     font-size: larger;
     text-decoration: underline var(--border);
