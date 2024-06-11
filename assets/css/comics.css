@@ -1,20 +1,48 @@
 * {
-    font-family: 'chewy', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+:root {
+    --border: Black;
+    --backboard: #ffff99 ;
+    --text: Black;
+}
+
 body {
     height: 100%;
     width: 100%;
-    background-image:url('../images/comic-style-background-flat-design_23-2148793185.jpg');
+    background-image:url('./images/comic-style-background-flat-design_23-2148793185.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     color: var(--text);
+}
+
+.header {
+    font-size: 148px;
+    text-align: center;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--backboard);
+    text-align: center;
+    font-size: 45px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 1px;
 }
 
 
