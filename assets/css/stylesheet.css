@@ -99,7 +99,8 @@ a:hover {
 .about-page h1 {
     padding: 10px;
     font-size: 40px;
-    text-decoration: underline var(--bluetxt);
+    text-decoration: underline var(--red);
+    border: 2px solid var(--bordercolor);
 }
 
 .about-page p {
