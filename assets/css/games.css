@@ -110,6 +110,11 @@ button:hover {
     margin: 5px;
 }
 
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
 #myImg {
     border: 2px solid var(--border);
     border-radius: 5px;

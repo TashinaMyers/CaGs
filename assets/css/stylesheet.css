@@ -69,7 +69,6 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
-    height: 100vh;
 }
 
 #G {
@@ -117,6 +116,39 @@ a:hover {
 
 .img:hover {
     transform: scale(1.05);
+}
+
+.foot {
+    flex-direction: row;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 150px;
+    border: 1px solid var(--bordercolor);
+}
+
+.links {
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: transparent;
+}
+
+.links a:hover {
+    color: var(--linkHover);
+}
+
+
+#catwshades {
+    height: 100px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 768px){
