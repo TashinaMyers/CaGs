@@ -21,6 +21,7 @@ header {
     margin: auto;
     color: bisque;
     font-size: 35px;
+    
 }
 
 /* DARK THEME */
@@ -28,6 +29,7 @@ header {
 body {
     background-color: white;
     color: black;
+    transition: background-color 1.5s, color 1.5s;
 }
 
 /* LIGHT THEME */
