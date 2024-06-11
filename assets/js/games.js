@@ -1,43 +1,33 @@
-//TOGGLE BUTTON FEATURE
+// FUNCTION TO HANDLE OPENING AND CLOSING OF MODALS
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const themeToggleButton = document.getElementById('theme-toggle');
-//     const currentTheme = localStorage.getItem('theme');
+const initializeModals = () => {
+  const images = document.querySelectorAll('#myImg');
+  const modals = document.querySelectorAll('.modal');
 
-//     if (currentTheme === 'light') {
-//         document.body.classList.remove('dark-theme');
-//     } else {
-//         document.body.classList.add('dark-theme');
-//     }
+  images.forEach((img, index) => {
+      const modal = modals[index];
+      const modalImg = modal.querySelector('.modal-content');
+      const captionText = modal.querySelector('.caption');
+      const closeBtn = modal.querySelector('.close');
 
-//     themeToggleButton.addEventListener('click', () => {
-//         document.body.classList.toggle('dark-theme');
+      img.addEventListener('click', () => {
+          modal.style.display = 'block';
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt;
+      });
 
-//         let theme = 'light';
-//         if (document.body.classList.contains('dark-theme')) {
-//             theme = 'dark';
-//         }
-//         localStorage.setItem('theme', theme);
-//     });
-// });
+      closeBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+      });
 
-// Get the modal
-let modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.getElementById("myImg");
-let modalImg = document.getElementById("img01");
-let captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+      modal.addEventListener('click', (event) => {
+          if (event.target === modal) {
+              modal.style.display = 'none';
+          }
+      });
+  });
 }
-console.log('modal works');
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// INITIALIZES MODALS FUNCTION UPON LOADING IN OUR PAGE
+
+initializeModals();
