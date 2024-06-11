@@ -85,6 +85,7 @@ button {
 button:hover {
     transform: scale(1.06);
     color: var(--border);
+    cursor: pointer;
 }
 
 .txt {
