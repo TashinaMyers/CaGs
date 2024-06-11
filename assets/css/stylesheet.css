@@ -92,18 +92,20 @@ a:hover {
     text-align: center;
     width: 50%;
     padding: 15px;
-    height: 500px;
+    height: auto;
 
 }
 
 .about-page h1 {
     padding: 10px;
-    font-size: 20px;
+    font-size: 40px;
+    text-decoration: underline var(--bluetxt);
 }
 
 .about-page p {
     flex-wrap: wrap;
     padding: 10px;
+    font-size: 20px;
 }
 
 .img {
