@@ -6,5 +6,15 @@
 }
 
 body {
-    background-image: url (https://img.freepik.com/free-vector/abstract-halftone-wallpaper-theme_23-2148585560.jpg);
+    height: 100%;
+    width: 100%;
+    background-image:url('../images/comic-style-background-flat-design_23-2148793185.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
 }
+
+
