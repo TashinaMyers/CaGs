@@ -49,9 +49,9 @@ const fetchData = async (category) => {
 // FUNCTION THAT APPENDS DATA IN EMPTY UL IN HTML FILE
 
 const appendDataToList = (data) => {
-    const ul = getElementById('catch');
-    
-    // CLEARS PREVIOUS DATA IF NESSESARY
+    const ul = document.getElementsByClassName('catch')[0];
+
+    // CLEARS PREVIOUS DATA IF NECESSARY
 
     ul.innerHTML = '';
 
@@ -64,6 +64,7 @@ const appendDataToList = (data) => {
         ul.appendChild(li);
     });
 };
+
 
 // EVENT LISTENERS ADDED TO BUTTON THAT CHANGES OUT CATEGORY VARIABLE 
 
