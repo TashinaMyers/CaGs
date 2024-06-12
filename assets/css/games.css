@@ -53,18 +53,22 @@ body {
 
 .nav-bar a {
     color: var(--text);
+    text-decoration: underline var(--border);
 }
 
 #pow a:hover {
     color: var(--border);
     box-shadow: 0px 0px 15px rgb(243, 243, 130);
     border-radius: var(--radius);
+    border: 2px solid var(--border);
+    
 }
 
 #home a:hover {
     color: var(--border);
     border-radius: var(--radius);
     box-shadow: 0px 0px 15px rgb(243, 243, 130);
+    border: 2px solid var(--border);
 }
 
 .flexy-main {
@@ -107,7 +111,7 @@ button:hover {
     transform: scale(1.06);
     color: var(--border);
     cursor: pointer;
-    box-shadow: 0px 0px 10px var(--border);
+    box-shadow: 0px 0px 10px rgb(243, 243, 130);
 }
 
 .txt {
@@ -119,7 +123,6 @@ button:hover {
     border-radius: var(--radius);
     padding: 10px;
     box-shadow: 0px 0px 20px var(--border)
-
 }
 
 .main {
@@ -247,11 +250,13 @@ button:hover {
         flex-direction: column;
         height: auto;
     }
+
     .left {
         width: auto;
     }
+
     .main {
         height: auto;
     }
-    
+
 }
