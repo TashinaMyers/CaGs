@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-    color: #666;
+    color: #ffff99;
     font-size: 148px;
     text-align: center;
     border: 2px solid var(--border);
