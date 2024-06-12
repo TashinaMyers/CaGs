@@ -4,9 +4,10 @@
 }
 
 :root {
-    --border: rgba(0, 195, 255, 0.932);
+    --border: rgb(0, 195, 255);
     --text: #ffffff;
     --backboard: rgba(5, 5, 5, 0.674);
+    --radius: 5px;
 }
 
 body {
@@ -22,11 +23,18 @@ body {
 .Games {
     background-color: var(--backboard);
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 10px;
     margin: 2px;
+}
+
+.Games h1 {
+    box-shadow: 0px 0px 20px var(--border);
+    color: var(--text);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
 }
 
 .nav-bar {
@@ -37,17 +45,30 @@ body {
     text-align: center;
     font-size: 25px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 10px;
     margin: 1px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .nav-bar a {
     color: var(--text);
+    text-decoration: underline var(--border);
 }
 
-a:hover {
-    color: rgb(125, 1, 1);
+#pow a:hover {
+    color: var(--border);
+    box-shadow: 0px 0px 15px rgb(243, 243, 130);
+    border-radius: var(--radius);
+    border: 2px solid var(--border);
+    
+}
+
+#home a:hover {
+    color: var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 15px rgb(243, 243, 130);
+    border: 2px solid var(--border);
 }
 
 .flexy-main {
@@ -55,8 +76,9 @@ a:hover {
     flex-direction: row;
     margin: 5px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     height: 100vh;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .left {
@@ -66,8 +88,10 @@ a:hover {
     padding: 10px;
     margin: 5px;
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     background-color: var(--backboard);
     width: 200px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 button {
@@ -78,6 +102,7 @@ button {
     background: var(--backboard);
     color: var(--text);
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     font-size: larger;
     text-decoration: underline var(--border);
 }
@@ -86,6 +111,7 @@ button:hover {
     transform: scale(1.06);
     color: var(--border);
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(243, 243, 130);
 }
 
 .txt {
@@ -94,34 +120,61 @@ button:hover {
     flex-direction: column;
     font-size: 28px;
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     padding: 10px;
-
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .main {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     background-color: var(--backboard);
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     margin: 5px;
+    box-shadow: 0px 0px 20px var(--border)
+}
+
+.gamepics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .results {
+    margin-top: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px var(--border);
+    width: 100%;
+    height: 50%;
+}
+
+.catch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px var(--border);
+    width: 100%;
+    height: 50%;
+    font-size: 10px;
+    padding: 5px;
+
 }
 
 #myImg {
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     cursor: pointer;
     transition: 0.3s;
     margin: 5px;
     height: 250px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 #myImg:hover {
@@ -219,11 +272,13 @@ button:hover {
         flex-direction: column;
         height: auto;
     }
+
     .left {
         width: auto;
     }
+
     .main {
         height: auto;
     }
-    
+
 }

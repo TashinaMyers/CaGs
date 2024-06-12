@@ -1,31 +1,31 @@
 // FUNCTION TO HANDLE OPENING AND CLOSING OF MODALS
 
 const initializeModals = () => {
-  const images = document.querySelectorAll('#myImg');
-  const modals = document.querySelectorAll('.modal');
+    const images = document.querySelectorAll('#myImg');
+    const modals = document.querySelectorAll('.modal');
 
-  images.forEach((img, index) => {
-      const modal = modals[index];
-      const modalImg = modal.querySelector('.modal-content');
-      const captionText = modal.querySelector('.caption');
-      const closeBtn = modal.querySelector('.close');
+    images.forEach((img, index) => {
+        const modal = modals[index];
+        const modalImg = modal.querySelector('.modal-content');
+        const captionText = modal.querySelector('.caption');
+        const closeBtn = modal.querySelector('.close');
 
-      img.addEventListener('click', () => {
-          modal.style.display = 'block';
-          modalImg.src = img.src;
-          captionText.innerHTML = img.alt;
-      });
+        img.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        });
 
-      closeBtn.addEventListener('click', () => {
-          modal.style.display = 'none';
-      });
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
 
-      modal.addEventListener('click', (event) => {
-          if (event.target === modal) {
-              modal.style.display = 'none';
-          }
-      });
-  });
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
 }
 
 // INITIALIZES MODALS FUNCTION UPON LOADING IN OUR PAGE
@@ -49,9 +49,9 @@ const fetchData = async (category) => {
 // FUNCTION THAT APPENDS DATA IN EMPTY UL IN HTML FILE
 
 const appendDataToList = (data) => {
-    const ul = getElementById('catch');
-    
-    // CLEARS PREVIOUS DATA IF NESSESARY
+    const ul = document.getElementsByClassName('catch')[0];
+
+    // CLEARS PREVIOUS DATA IF NECESSARY
 
     ul.innerHTML = '';
 
@@ -64,6 +64,7 @@ const appendDataToList = (data) => {
         ul.appendChild(li);
     });
 };
+
 
 // EVENT LISTENERS ADDED TO BUTTON THAT CHANGES OUT CATEGORY VARIABLE 
 

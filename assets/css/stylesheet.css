@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -6,7 +6,8 @@
 :root {
     --bluetxt: rgb(55, 0, 166);
     --red: rgb(125, 1, 1);
-    --bordercolor: rgb(0, 0, 179);
+    --bordercolor: rgba(55, 0, 166, 1);
+    --text: bisque;
 
 }
 
@@ -19,9 +20,9 @@ header {
     border-radius: 8px;
     padding: 15px;
     margin: auto;
-    color: bisque;
+    color: var(--text);
     font-size: 35px;
-    
+
 }
 
 /* DARK THEME */
@@ -36,16 +37,17 @@ body {
 
 body.dark-theme {
     background-color: black;
-    color: bisque;
+    color: var(--text);
 
 }
+
 span {
     margin: 20px;
 }
 
 
 .navbar {
-    border: 2px solid bisque;
+    border: 2px solid var(--text);
     justify-content: center;
     margin: 5px;
     padding: 10px;
@@ -78,7 +80,7 @@ a:hover {
 
 #and {
     color: var(--red);
-    border: 2px solid bisque;
+    border: 2px solid var(--text);
     margin: 2px;
     padding: 5px;
     width: 100px;
@@ -156,15 +158,15 @@ a:hover {
     margin: 10px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .flex-main {
         display: flex;
         flex-direction: column;
-    }    
+    }
 }
 
 @media screen and (max-width: 768px) {
     #center {
         width: 100%;
-    }    
+    }
 }

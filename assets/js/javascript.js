@@ -22,3 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+const appendDataToList = (data) => {
+    const ul = document.getElementsByClassName('catch')[0]; // Assuming there is only one element with class 'catch'
+
+    // CLEARS PREVIOUS DATA IF NECESSARY
+
+    ul.innerHTML = '';
+
+    data.forEach(item => {
+
+        // CREATES AN LI ELEMENT PER EACH ITEM RETURNED
+
+        const li = document.createElement('li');
+        li.textContent = item.title;
+        ul.appendChild(li);
+    });
+};
