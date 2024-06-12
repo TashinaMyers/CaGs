@@ -4,9 +4,10 @@
 }
 
 :root {
-    --border: rgba(0, 195, 255, 0.932);
+    --border: rgb(0, 195, 255);
     --text: #ffffff;
     --backboard: rgba(5, 5, 5, 0.674);
+    --radius: 5px;
 }
 
 body {
@@ -22,11 +23,18 @@ body {
 .Games {
     background-color: var(--backboard);
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 10px;
     margin: 2px;
+}
+
+.Games h1 {
+    box-shadow: 0px 0px 20px var(--border);
+    color: var(--text);
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
 }
 
 .nav-bar {
@@ -37,17 +45,26 @@ body {
     text-align: center;
     font-size: 25px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     padding: 10px;
     margin: 1px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .nav-bar a {
     color: var(--text);
 }
 
-a:hover {
-    color: rgb(125, 1, 1);
+#pow a:hover {
+    color: var(--border);
+    box-shadow: 0px 0px 15px rgb(243, 243, 130);
+    border-radius: var(--radius);
+}
+
+#home a:hover {
+    color: var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 15px rgb(243, 243, 130);
 }
 
 .flexy-main {
@@ -55,8 +72,9 @@ a:hover {
     flex-direction: row;
     margin: 5px;
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     height: 100vh;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .left {
@@ -66,8 +84,10 @@ a:hover {
     padding: 10px;
     margin: 5px;
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     background-color: var(--backboard);
     width: 200px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 button {
@@ -78,6 +98,7 @@ button {
     background: var(--backboard);
     color: var(--text);
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     font-size: larger;
     text-decoration: underline var(--border);
 }
@@ -86,6 +107,7 @@ button:hover {
     transform: scale(1.06);
     color: var(--border);
     cursor: pointer;
+    box-shadow: 0px 0px 10px var(--border);
 }
 
 .txt {
@@ -94,7 +116,9 @@ button:hover {
     flex-direction: column;
     font-size: 28px;
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     padding: 10px;
+    box-shadow: 0px 0px 20px var(--border)
 
 }
 
@@ -107,21 +131,25 @@ button:hover {
     width: 100%;
     background-color: var(--backboard);
     border: 2px solid var(--border);
+    border-radius: var(--radius);
     margin: 5px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 .results {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 #myImg {
     border: 2px solid var(--border);
-    border-radius: 5px;
+    border-radius: var(--radius);
     cursor: pointer;
     transition: 0.3s;
     margin: 5px;
     height: 250px;
+    box-shadow: 0px 0px 20px var(--border)
 }
 
 #myImg:hover {
