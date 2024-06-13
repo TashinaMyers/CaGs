@@ -125,11 +125,29 @@ ul {
   .thor a {
     text-align: center;
     justify-content: center;
-    padding: 11%;
+    padding: 20%;
   }
   
   .kapow_image {
-    height: 55%;
-    width
+    height: 30%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    border: 2px solid var(--border);
+  }
+
+  #powImg {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px var(--border)
+}
+
+ #powImg:hover {
+    opacity: 0.7;
+}
+
+  .credits p {
+    text-align: center;
   }
   
