@@ -115,5 +115,21 @@ ul {
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10;
   }
+
+  .iron a {
+    text-align: center;
+    justify-content: center;
+    padding: 11%;
+  }
+
+  .thor a {
+    text-align: center;
+    justify-content: center;
+    padding: 11%;
+  }
   
+  .kapow_image {
+    height: 55%;
+    width
+  }
   
