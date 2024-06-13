@@ -136,4 +136,9 @@ ul {
     margin-top: 10%;
     border: 2px solid var(--border);
   }
+
+  .credits p {
+    text-align: center;
+    
+  }
   
