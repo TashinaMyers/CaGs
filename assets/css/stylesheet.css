@@ -98,6 +98,17 @@ a:hover {
 
 }
 
+#info {
+    margin: auto;
+    border: 5px solid var(--red);
+    text-align: center;
+    width: 50%;
+    padding: 15px;
+    font-size: 10px;
+    height: fit-content;
+}
+
+
 .about-page h1 {
     padding: 10px;
     font-size: 40px;
