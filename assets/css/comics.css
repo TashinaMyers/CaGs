@@ -6,9 +6,9 @@
 }
 
 :root {
-    --border: Black;
-    --backboard: #ffff99 ;
-    --text: Black;
+    --border: #ffff99;
+    --backboard: black ;
+    --text: black;
 }
 
 body {
@@ -24,9 +24,11 @@ body {
 }
 
 .header {
+    color: #ffff99;
     font-size: 148px;
     text-align: center;
     border: 2px solid var(--border);
+    background-color: var(--backboard);
     border-radius: 5px;
     padding: 10px;
     margin: 2px;
@@ -49,6 +51,17 @@ body {
     color: var(--text);
 }
 
+.search {
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+    border: 2px solid var(--border);
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -66,14 +79,14 @@ ul {
   
   ul li a {
     position: relative; 
-    display: block;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    width: 95px;
+    height: 95px;
     text-align: center;
-    line-height: 63px;
-    background: #333;
+    line-height: 40px;
+    background: black;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 20px;
     color: #666;
     transition: .5s;
   }
