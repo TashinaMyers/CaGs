@@ -137,8 +137,17 @@ ul {
     border: 2px solid var(--border);
   }
 
+  #powImg {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px var(--border)
+}
+
+ #powImg:hover {
+    opacity: 0.7;
+}
+
   .credits p {
     text-align: center;
-    
   }
   
