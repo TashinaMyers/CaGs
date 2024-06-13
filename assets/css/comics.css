@@ -25,7 +25,7 @@ body {
 
 .header {
     color: #ffff99;
-    font-size: 148px;
+    font-size: 100px;
     text-align: center;
     border: 2px solid var(--border);
     background-color: var(--backboard);
@@ -40,15 +40,26 @@ body {
     justify-content: space-around;
     background-color: var(--backboard);
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     border: 2px solid var(--border);
     border-radius: 5px;
     padding: 10px;
     margin: 1px;
 }
 
-.nav {
-    color: var(--text);
+.nav-bar a{
+  color: #666;
+}
+
+a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }
 
 .search {
@@ -133,7 +144,7 @@ ul {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 10%;
+    margin-top: 15%;
     border: 2px solid var(--border);
   }
 
