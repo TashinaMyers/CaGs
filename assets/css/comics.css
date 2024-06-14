@@ -158,7 +158,19 @@ ul {
     opacity: 0.7;
 }
 
+.comics ul li {
+  height: 20px;
+  width: 5%;
+  margin: auto;
+  margin-top: 35%;
+  margin-left: 10%;
+  margin-right: 5%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
   .credits p {
     text-align: center;
+    margin-top: 35%;
   }
   
