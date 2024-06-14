@@ -235,6 +235,10 @@ button:hover {
     animation-duration: 0.6s;
 }
 
+#foots {
+    text-align: center;
+}
+
 @keyframes zoom {
     from {
         transform: scale(0)
