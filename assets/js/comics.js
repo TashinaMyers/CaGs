@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const fetchComics = (characterName) => {
     const timestamp = new Date().getTime();
     const hash = CryptoJS.MD5(`${timestamp}${privateKey}${publicKey}`).toString();
+
     const characterIds = {
         'Captain America': 1009220,
         'Iron Man': 1009368,
@@ -62,7 +63,6 @@ const fetchComics = (characterName) => {
                 const comic = comics[i];
                 const li = document.createElement('li');
                 const title = document.createElement('h2');
-                title.textContent = comic.title;
                 const img = document.createElement('img');
         
                 if (comic.thumbnail && comic.thumbnail.path && comic.thumbnail.extension) {
@@ -75,6 +75,8 @@ const fetchComics = (characterName) => {
                     
                     continue;
                 }
+
+                title.textContent = comic.title;
         
                 li.appendChild(title);
                 li.appendChild(img);
@@ -105,7 +107,6 @@ const fetchComics = (characterName) => {
                 const comic = comics[i];
                 const li = document.createElement('li');
                 const title = document.createElement('h2');
-                title.textContent = comic.title;
                 const img = document.createElement('img');
         
                 if (comic.thumbnail && comic.thumbnail.path && comic.thumbnail.extension) {
@@ -118,6 +119,8 @@ const fetchComics = (characterName) => {
 
                     continue;
                 }
+
+                title.textContent = comic.title;
         
                 li.appendChild(title);
                 li.appendChild(img);

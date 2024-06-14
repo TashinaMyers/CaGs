@@ -1,0 +1,46 @@
+/* A TRANSITION WAS ADDED TO TRY TO PERSUE A SMOOTHER TRANSITION IN THEME */
+
+body {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#toggle-theme, #back-button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* ADDS FLEX TO POSTS SO THEY WRAP AROUND THE WHOLE SCREEN */
+
+#posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode .post {
+    border: 1px solid #666;
+}
+
+.post h2 {
+    margin-top: 0;
+}
