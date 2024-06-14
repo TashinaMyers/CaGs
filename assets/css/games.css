@@ -64,6 +64,13 @@ body {
 
 }
 
+#posts:hover {
+    color: var(--border);
+    box-shadow: 0px 0px 15px rgb(243, 243, 130);
+    border-radius: var(--radius);
+    border: 2px solid var(--border);
+}
+
 #home a:hover {
     color: var(--border);
     border-radius: var(--radius);
@@ -237,7 +244,9 @@ button:hover {
 
 #foots {
     text-align: center;
+    padding: 10px;
 }
+
 
 @keyframes zoom {
     from {
