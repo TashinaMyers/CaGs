@@ -1,21 +1,12 @@
-//COLLECTS DATA LEFT IN LOCAL STORAGE BY OUR PREVIOUS JAVASCRIPT FILE
+// LOADS ELEMENTS ONTO OUR PAGE THAT IS PULLED FROM OUR LOCAL STORAGE
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const postsContainer = document.getElementById('posts-container');
-    const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
-
-        // CHECKS FOR ELEMENTS IN LOCAL STORAGE
+    const blogPosts = JSON.parse(localStorage.getItem('blogposts')) || [];
 
     if (blogPosts.length === 0) {
-        
-        //IF NO ELEMENTS ARE PRESENT, FOLLOWING MESSAGE APPEARS:
-
         postsContainer.innerHTML = "<p>Hmm..? There aren't any posts yet. Come back later or go back and talk about your favourite topics! :D</p>";
-
     } else {
-
-        // CREATES A CARD FOR EACH POST AND APPENDS THEM TO OUR BLOG.HTML
-
         blogPosts.forEach(post => {
             const postElement = document.createElement('div');
             postElement.className = 'post';
@@ -27,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             postsContainer.appendChild(postElement);
         });
     }
+});
 
         // FUNCIONS THAT HANDLE DARK THEME 
     
@@ -54,4 +46,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('back-button').addEventListener('click', function() {
         window.location.href = 'index.html';
     });
-});
