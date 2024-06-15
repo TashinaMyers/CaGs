@@ -1,11 +1,11 @@
 /* A TRANSITION WAS ADDED TO TRY TO PERSUE A SMOOTHER TRANSITION IN THEME */
 
 body {
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 1.5s, color 1.5s;
 }
 
 .dark-mode {
-    background-color: #333;
+    background-color: black;
     color: #fff;
 }
 
@@ -13,6 +13,15 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.and {
+    font-size: 30px;
+    color: rgb(125, 1, 1);
+    border: 2px solid bisque;
+    margin: 2px;
+    padding: 5px;
+    height: fit-content;
 }
 
 #toggle-theme, #back-button {
@@ -23,22 +32,26 @@ header {
 /* ADDS FLEX TO POSTS SO THEY WRAP AROUND THE WHOLE SCREEN */
 
 #posts-container {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
+    flex-direction: column;
 }
 
 .post {
-    border: 1px solid #ccc;
+    color: black ;
+    border: 1px solid rgba(55, 0, 166, 1);
     padding: 1rem;
     width: 200px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 1.5s, color 1.5s;
 }
 
 .dark-mode .post {
-    border: 1px solid #666;
+    border: 1px solid rgba(55, 0, 166, 1);
+    color: bisque;
 }
 
 .post h2 {
