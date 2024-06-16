@@ -85,3 +85,5 @@ document.getElementById('btn1').addEventListener('click', () => fetchData('strat
 document.getElementById('btn2').addEventListener('click', () => fetchData('shooter'));
 document.getElementById('btn3').addEventListener('click', () => fetchData('action'));
 document.getElementById('btn4').addEventListener('click', () => fetchData('adventure'));
+document.getElementById('btn5').addEventListener('click', () => fetchData('role-playing-games-rpg'));
+document.getElementById('btn6').addEventListener('click', () => fetchData('puzzle'));
