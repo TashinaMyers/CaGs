@@ -140,7 +140,7 @@ a:hover {
     flex-direction: column;
     border: 5px solid var(--bordercolor);
     border-radius: 5px;
-    width: 45%;
+    width: 40%;
     margin: auto;
     padding: 10px;
 }
@@ -148,7 +148,7 @@ a:hover {
 #blog-form {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 35% auto;
     justify-content: center;
     margin: auto;
     border: 2px solid var(--red);
@@ -208,7 +208,14 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    #center {
+    #center, .form {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 768px) {
+    #profs {
+        color: var(--bluetxt);
+    }
+    
 }
