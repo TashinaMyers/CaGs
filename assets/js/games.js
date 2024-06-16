@@ -32,15 +32,17 @@ const initializeModals = () => {
 
 initializeModals();
 
+
 // FUNCTION THAT FETCHES DATA FROM OUR API
 
 const fetchData = async (category) => {
-    const url = `https://www.freetogame.com/api/games?category=${category}`;
+    const apiKey = '58a33015678a4c4da6b54cea30fd2fa2';
+    const url = `https://api.rawg.io/api/games?key=${apiKey}&genres=${category}`;
 
     try {
         const response = await fetch(url);
         const data = await response.json();
-        appendDataToList(data);
+        appendDataToList(data.results);
     } catch (error) {
         console.error(`Error fetching data:`, error);
     }
@@ -56,19 +58,30 @@ const appendDataToList = (data) => {
     ul.innerHTML = '';
 
     data.forEach(item => {
-
         // CREATES AN LI ELEMENT PER EACH ITEM RETURNED
 
         const li = document.createElement('li');
-        li.textContent = item.title;
+
+        // CREATE AND ADD IMAGE THUMBNAIL
+
+        const img = document.createElement('img');
+        img.src = item.background_image;
+        img.alt = item.name;
+
+        // ADD GAME TITLE
+        
+        const text = document.createElement('span');
+        text.textContent = item.name;
+
+        li.appendChild(img);
+        li.appendChild(text);
         ul.appendChild(li);
     });
 };
 
-
-// EVENT LISTENERS ADDED TO BUTTON THAT CHANGES OUT CATEGORY VARIABLE 
+// EVENT LISTENERS ADDED TO BUTTON THAT CHANGES OUT CATEGORY VARIABLE
 
 document.getElementById('btn1').addEventListener('click', () => fetchData('strategy'));
 document.getElementById('btn2').addEventListener('click', () => fetchData('shooter'));
-document.getElementById('btn3').addEventListener('click', () => fetchData('mmorpg'));
-document.getElementById('btn4').addEventListener('click', () => fetchData('survival'));
+document.getElementById('btn3').addEventListener('click', () => fetchData('action'));
+document.getElementById('btn4').addEventListener('click', () => fetchData('adventure'));

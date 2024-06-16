@@ -298,3 +298,29 @@ button:hover {
     }
 
 }
+
+/* STYLES FOR ITEMS RENDERED IN OUR PAGE */
+
+ul.catch {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.catch li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.catch li img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 4px; /* Optional: for rounded corners */
+}
+
+ul.catch li span {
+    font-size: 16px;
+}
