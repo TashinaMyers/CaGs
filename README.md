@@ -30,6 +30,6 @@
 
 Css frameworks used: https://www.sliderrevolution.com/resources/css-hover-effects/ (Glowing Icon Hover Effect)
 
-API's used: https://developer.marvel.com/  https://www.freetogame.com/api/games?category=shooter
+API's used: https://developer.marvel.com/  Explore RAWG Video Games Database API • RAWG
 
 https://tashinamyers.github.io/CaGs/index.html
